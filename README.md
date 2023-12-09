@@ -1,2 +1,3 @@
 # Toxic-message-Classifier-
 Identify toxic message using logistic regression
+* Initial findings : I tried to build the simple toxic message classifier using logistic Regression where for the preprocessing I created custom function that take sentence as input and first tokenize , lemmatize , normalize and remove the stopword and punctations . Then the preprocessed sentence is passed to create vector representation using word2vec then the representation was again passed to model where it classified the message was toxic or not. The model was doing very well identifying the toxic and non-toxic message but for the tricky sentence like ("Hate is everywhere but I don't hate you") it classified it as toxic which was not true.
